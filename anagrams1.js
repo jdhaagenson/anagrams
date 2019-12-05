@@ -18,7 +18,9 @@ let getAnagramsOf = (input) => {
             result.push(word)
         }
     }
-    document.createElement("output")
-    document.getElementById('output').textContent = result.join(", ")
+    let main = document.getElementById("main")
+    let output = document.createElement('div')
+    output.textContent = result.join(", ")
+    main.appendChild(output)
     return result
 }
